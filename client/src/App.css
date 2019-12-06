@@ -31,3 +31,21 @@
     transform: rotate(360deg);
   }
 }
+.light-mode {
+  color: black;
+  background-color: white;
+}
+
+.dark-mode {
+  color: black;
+  background-color: orange;
+}
+
+.dark-card {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border: 2px solid white;
+  padding: 2%;
+  margin: 2%;
+}
