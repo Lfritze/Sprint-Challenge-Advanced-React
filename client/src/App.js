@@ -32,6 +32,7 @@ class App extends Component {
           {this.state.data.map(player => (
             <DataCard key={player.id} data={player} />
           ))}
+          ;
         </div>
       </div>
     );
