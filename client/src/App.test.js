@@ -20,3 +20,12 @@ it("renders without failing - the NavHeader button", () => {
   const navRender = tester.render(<NavHeader />);
   console.log(navRender.debug());
 });
+
+// https://www.npmjs.com/package/react-async
+
+// testing results
+// Test Suites: 2 passed, 2 total
+// Tests:       4 passed, 4 total
+// Snapshots:   0 total
+// Time:        3.333s
+// Ran all test suites.
