@@ -1,5 +1,11 @@
 import React from "react";
 import useDarkMode from "../hooks/useDarkMode";
+import {
+  NavContainer,
+  H2Nav,
+  ButtonContainer,
+  NavButton
+} from "../styledComponents/AppStyling";
 
 const NavHeader = () => {
   const [toggle, setToggle] = useDarkMode(false);
@@ -10,16 +16,16 @@ const NavHeader = () => {
   };
 
   return (
-    <div>
-      <h2>
+    <NavContainer>
+      <H2Nav>
         Women's World Cup <br></br>Search Data
-      </h2>
-      <div>
-        <button data-testid="navbutton" onClick={darkToggle}>
+      </H2Nav>
+      <ButtonContainer>
+        <NavButton data-testid="navbutton" onClick={darkToggle}>
           Change Color Mode
-        </button>
-      </div>
-    </div>
+        </NavButton>
+      </ButtonContainer>
+    </NavContainer>
   );
 };
 export default NavHeader;

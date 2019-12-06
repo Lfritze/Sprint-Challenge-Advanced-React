@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import DataCard from "./components/DataCard";
 import NavHeader from "./components/NavHeader";
+import { MainContainer } from "./styledComponents/AppStyling";
 
 import "./App.css";
 
@@ -28,12 +29,12 @@ class App extends Component {
     return (
       <div className="App">
         <NavHeader />
-        <div>
+        <MainContainer>
           {this.state.data.map(player => (
             <DataCard key={player.id} data={player} />
           ))}
           ;
-        </div>
+        </MainContainer>
       </div>
     );
   }
