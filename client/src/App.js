@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
+import DataCard from "./components/DataCard";
+import NavHeader from "./components/NavHeader";
 
 import "./App.css";
 
@@ -23,7 +25,16 @@ class App extends Component {
       });
   }
   render() {
-    return <div className="App"></div>;
+    return (
+      <div className="App">
+        <NavHeader />
+        <div>
+          {this.state.data.map(player => (
+            <DataCard key={player.id} data={player} />
+          ))}
+        </div>
+      </div>
+    );
   }
 }
 
